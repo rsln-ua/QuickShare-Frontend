@@ -1,0 +1,76 @@
+.pageWrapper {
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logoWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.logoWrapper img {
+    max-width: 100%;
+    width: 200px;
+}
+
+.nameWrapper {
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--dark);
+    text-align: center;
+}
+
+.buttonWrapper {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+
+    border-radius: 2rem;
+
+    overflow: hidden;
+}
+
+.buttonWrapper > button {
+    background-color: var(--orange);
+    color: var(--light);
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 0.75rem 1rem;
+
+    cursor: pointer;
+}
+
+.buttonWrapper > button:disabled {
+    background: var(--orange-disabled);
+}
+
+.buttonWrapper > button:hover {
+    background-color: var(--dark);
+}
+
+.buttonWrapper > button:first-child {
+    flex-grow: 1;
+}
+
+.buttonWrapper > button:nth-child(2), .buttonWrapper > button:nth-child(3) {
+    border-left: 1px solid var(--light);
+    padding: 0 1rem;
+}
+
+
+.buttonWrapper > button:nth-child(2) {
+    width: 70px;
+}
+
+
+.buttonWrapper > button:nth-child(3) {
+    width: 100px;
+}
+
+.buttonReset {
+    border: none;
+    background: none;
+}
